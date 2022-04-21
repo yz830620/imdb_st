@@ -38,7 +38,7 @@ user_min_year = st.slider('movie not less than ...', min_value=table_min_year, m
 
 # switch two boundary if user misunderstanding
 if user_max_year < user_min_year:
-   yeauser_max_yearr_upper, user_min_year = user_min_year, user_max_year
+   user_max_year, user_min_year = user_min_year, user_max_year
 
 # get unique genres form table
 unique_genres = get_unique_genres(movie_table)
